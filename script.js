@@ -1,4 +1,13 @@
-function toggleMenu() {
-    const menu = document.getElementById('menu');
-    menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+var dropdown = document.getElementById('shit');
+function menuabrir() {
+    
+   if (dropdown.style.visibility !='visible'){
+        dropdown.style.visibility = 'visible';
+
+   }
+   else {
+    dropdown.style.visibility = 'collapse';
+     console.log(dropdown.style.display);
 }
+   }
+   

@@ -1,30 +1,28 @@
-body {
-    font-family: Arial, sans-serif;
-}
+:root{
+    --fonte: #EAEAEA;
+    --fundo: #252A34;
+    --fonte_mat: #FF2E63;
+    --fonte_mat2: #08D9D6;
 
-header {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 0;
 }
-
-.menu-principal ul,
-.menu-secundario ul {
-    list-style-type: none;
-}
-
-.menu-principal li,
-.menu-secundario li {
-    display: inline;
-    margin-right: 20px;
-}
-
-.menu-principal a,
-.menu-secundario a {
-    color: white;
-    text-decoration: none;
-}
-
-input[type=text] {
-    margin-left: 20px;
-}
+    body{
+        background-color: var(--fundo);
+        color: var(--fonte);
+    }
+    header.cabel{
+        display: flex;
+        
+    }
+    #tividade {
+        display: flex;
+        gap: 3em;
+        justify-content: space-between;
+    }
+    a{
+        color: var(--fonte);
+        text-decoration: none;
+    }
+    #shit{
+        visibility: collapse;
+        
+    }
