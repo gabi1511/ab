@@ -3,42 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Meu Portfólio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Portfólio</h1>
-        <h2 id="disciplina">Matemática</h2>
-        <input type="text" placeholder="Buscar...">
+        <h1>Meu Portfólio</h1>
+        <input type="text" id="search" placeholder="Buscar...">
         <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
     </header>
 
     <nav id="sidebar" class="hidden">
         <ul>
-            <li><a href="#" onclick="changeDisciplina('Matemática')">Matemática</a></li>
-            <li><a href="#" onclick="changeDisciplina('Física')">Física</a></li>
-            <li><a href="#" onclick="changeDisciplina('Química')">Química</a></li>
+            <li><a href="Matemática.html">Matemática</a></li>
+            <li><a href="Física.html">Física</a></li>
+            <li><a href="Química.html">Química</a></li>
         </ul>
+        <span class="close-btn" onclick="toggleMenu()">&times;</span>
     </nav>
 
     <main id="conteudo">
-        <h3>Bem-vindo ao meu portfólio de Matemática!</h3>
-        <p>Aqui você encontrará atividades, provas e projetos.</p>
+        <h3>Bem-vindo ao meu portfólio!</h3>
+        <p>Escolha uma disciplina no menu.</p>
     </main>
 
-    <script>
-        function toggleMenu() {
-            const sidebar = document.getElementById('sidebar');
-            sidebar.classList.toggle('hidden');
-        }
-
-        function changeDisciplina(disciplina) {
-            document.getElementById('disciplina').innerText = disciplina;
-            document.getElementById('conteudo').innerHTML = `<h3>Bem-vindo ao meu portfólio de ${disciplina}!</h3><p>Aqui você encontrará atividades, provas e projetos.</p>`;
-            toggleMenu(); // fecha o menu após a seleção
-        }
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
 

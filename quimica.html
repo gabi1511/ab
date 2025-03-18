@@ -3,40 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Química</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Portfólio de Química</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header>
+        <h1>Portfólio de Química</h1>
+        <input type"text" id='search' placeholder='Buscar...'>
+     	<div class='menu-icon' onclick='toggleMenu()'>&#9776;</div>	
+		<h2>Aqui você encontrará atividades, provas e projetos relacionados à Química.</h2>	
+		<nav id='sidebar' class='hidden'>
+			<ul >
+				<li ><a href='index.html'>Início<a></li >
+				<li ><a href='Matemática.html'>Matemática<a></li >
+				<li ><a href='Física.html'>Física<a></li >
+			<ul >
+			<span class='close-btn' onclick='toggleMenu()'>&times;</span >	
+			<nav >	
+			<main id='conteudo'>
+				<h3 >Atividades de Química<h3 >
+			<main >	
+			<script src='script.js'></script >	
+<head >
+<!DOCTYPE html >
 
-<header>
-    <div class="logo">Minha Escola</div>
-
-    <nav class="menu-principal">
-        <ul>
-            <li><a href="#" class="hamburger" onclick="toggleMenu()">Disciplinas</a></li>
-            <li><a href="#conteudos">Conteúdos Principais</a></li>
-        </ul>
-    </nav>
-
-    <div class="search-container">
-        <input type="text" placeholder="Pesquisar...">
-        <button onclick="search()">🔍</button>
-    </div>
-
-    <div class="menu-hamburguer" id="menu-hamburguer">
-        <ul>
-            <li><a href="matematica.html">Matemática</a></li>
-            <li><a href="fisica.html">Física</a></li>
-            <li><a href="#">Química</a></li> <!-- Aqui está a página atual -->
-        </ul> 
-    </div>
-
-    <button class="toggle-menu" onclick="toggleMenu()">☰</button> 
-</header>
-
-<h1>Bem-vindo à Química!</h1> 
-<p>Aqui você encontrará materiais sobre Química.</p> 
-
-<script src "script.js"></script> 
-</body> 
-</html> 

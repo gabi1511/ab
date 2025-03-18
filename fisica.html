@@ -1,43 +1,33 @@
-html
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Física</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Portfólio de Física</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header>
+        <h1>Portfólio de Física</h1>
+        <input type="text" id="search" placeholder="Buscar...">
+        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+    </header>
 
-<header>
-    <div class="logo">Minha Escola</div>
-
-    <nav class="menu-principal">
+    <nav id="sidebar" class="hidden">
         <ul>
-            <li><a href="#" class="hamburger" onclick="toggleMenu()">Disciplinas</a></li>
-            <li><a href="#conteudos">Conteúdos Principais</a></li>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="Matemática.html">Matemática</a></li>
+            <li><a href="Química.html">Química</a></li>
         </ul>
+        <span class="close-btn" onclick="toggleMenu()">&times;</span>
     </nav>
 
-    <div class="search-container">
-        <input type="text" placeholder="Pesquisar...">
-        <button onclick="search()">🔍</button>
-    </div>
+    <main id="conteudo">
+        <h3>Atividades de Física</h3>
+        <!-- Adicione aqui o conteúdo específico de Física -->
+        <p>Aqui você encontrará atividades, provas e projetos relacionados à Física.</p>
+    </main>
 
-    <div class="menu-hamburguer" id="menu-hamburguer">
-        <ul>
-            <li><a href="matematica.html">Matemática</a></li>
-            <li><a href="fisica.html">Física</a></li>
-            <li><a href="quimica.html">Química</a></li>
-        </ul>
-    </div>
-
-    <button class="toggle-menu" onclick="toggleMenu()">☰</button>
-</header>
-
-<h1>Bem-vindo à Física!</h1>
-<p>Aqui você encontrará materiais sobre Física.</p>
-
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
