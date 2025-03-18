@@ -1,28 +1,53 @@
-:root{
-    --fonte: #EAEAEA;
-    --fundo: #252A34;
-    --fonte_mat: #FF2E63;
-    --fonte_mat2: #08D9D6;
-
+body {
+    font-family: Arial, sans-serif;
 }
-    body{
-        background-color: var(--fundo);
-        color: var(--fonte);
-    }
-    header.cabel{
-        display: flex;
-        
-    }
-    #tividade {
-        display: flex;
-        gap: 3em;
-        justify-content: space-between;
-    }
-    a{
-        color: var(--fonte);
-        text-decoration: none;
-    }
-    #shit{
-        visibility: collapse;
-        
-    }
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #4CAF50;
+    padding: 10px 20px;
+}
+
+.logo {
+    color: white;
+    font-size: 24px;
+}
+
+.menu-principal ul {
+    list-style-type: none;
+}
+
+.menu-principal ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.menu-principal a {
+    color: white;
+    text-decoration: none;
+}
+
+.search-container {
+    display: flex;
+}
+
+.search-container input {
+    padding: 5px;
+}
+
+.search-container button {
+    padding: 5px;
+}
+
+.menu-hamburguer {
+    display: none; /* Inicialmente escondido */
+}
+
+.toggle-menu {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 24px;
+}

@@ -1,13 +1,9 @@
-var dropdown = document.getElementById('shit');
-function menuabrir() {
+function toggleMenu() {
+    const menuHamburguer = document.getElementById("menu-hamburguer");
     
-   if (dropdown.style.visibility !='visible'){
-        dropdown.style.visibility = 'visible';
-
-   }
-   else {
-    dropdown.style.visibility = 'collapse';
-     console.log(dropdown.style.display);
+    if (menuHamburguer.style.display === "block") {
+        menuHamburguer.style.display = "none";
+    } else {
+        menuHamburguer.style.display = "block";
+    }
 }
-   }
-   
