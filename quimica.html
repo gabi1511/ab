@@ -1,39 +1,42 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
-    <link rel="stylesheet" href="style.css">
+    <title>Química</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header class="cabel">
-        <div class="hamburbur">
-            <button class="fa fa-bars" onclick="menuabrir()">≡</button>
-            <ul id="shit">
-                <li>
-                     <a href="matematica.html">Matemática</a>
-                </li>
-                <li>
-                    <a href="fisica.html">Física</a>
-                </li>
-                <li>
-                    <a href="quimica.html">Química</a>
-                </li>
-            </ul> 
-        </div>
-        <div class="port">
-            <h1>Portifólio</h1>
 
-        </div>
-        <div class="lista_lista">
-            <ul id="tividade">
-                <li><a href="#">Atividades</a></li>
-                <li><a href="#">Projetos</a></li>
-                <li><a href="#">Trabalhos</a></li>
-            </ul>
-        </div>
-    </header>
-    <script src="script.js"></script>
-</body>
-</html>
+<header>
+    <div class="logo">Minha Escola</div>
+
+    <nav class="menu-principal">
+        <ul>
+            <li><a href="#" class="hamburger" onclick="toggleMenu()">Disciplinas</a></li>
+            <li><a href="#conteudos">Conteúdos Principais</a></li>
+        </ul>
+    </nav>
+
+    <div class="search-container">
+        <input type="text" placeholder="Pesquisar...">
+        <button onclick="search()">🔍</button>
+    </div>
+
+    <div class="menu-hamburguer" id="menu-hamburguer">
+        <ul>
+            <li><a href="matematica.html">Matemática</a></li>
+            <li><a href="fisica.html">Física</a></li>
+            <li><a href="#">Química</a></li> <!-- Aqui está a página atual -->
+        </ul> 
+    </div>
+
+    <button class="toggle-menu" onclick="toggleMenu()">☰</button> 
+</header>
+
+<h1>Bem-vindo à Química!</h1> 
+<p>Aqui você encontrará materiais sobre Química.</p> 
+
+<script src "script.js"></script> 
+</body> 
+</html> 
