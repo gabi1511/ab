@@ -3,33 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
-    <link rel="stylesheet" href="style.css">
+    <title>Portfólio de Disciplinas</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header class="cabel">
-        <div class="hamburbur">
-            <button class="fa fa-bars" onclick="menuabrir()">≡</button>
-            <ul id="shit">
-                <li>
-                     <a href="matematica.html">Matemática</a>
-                </li>
-                <li>
-                    <a href="fisica.html">Física</a>
-                </li>
-                <li>
-                    <a href="quimica.html">Química</a>
-                </li>
-            </ul> 
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Logo do Portfólio">
         </div>
-        <div class="lista_lista">
-            <ul id="tividade">
-                <li><a href="#">Atividades</a></li>
-                <li><a href="#">Projetos</a></li>
-                <li><a href="#">Trabalhos</a></li>
+
+        <!-- Barra de Pesquisa (Não Funcional) -->
+        <div class="search">
+            <input type="text" placeholder="Pesquisar...">
+            <button><span class="material-icons">search</span></button>
+        </div>
+
+        <!-- Menu Hamburger -->
+        <nav>
+            <button class="hamburger" onclick="toggleMenu()">
+                <span class="material-icons">menu</span>
+            </button>
+            <ul id="menu">
+                <li><a href="disciplina1.html">Disciplina 1</a></li>
+                <li><a href="disciplina2.html">Disciplina 2</a></li>
+                <li><a href="disciplina3.html">Disciplina 3</a></li>
             </ul>
-        </div>
+        </nav>
     </header>
+
     <script src="script.js"></script>
 </body>
 </html>
