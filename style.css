@@ -45,6 +45,16 @@ header {
     display: none; /* Inicialmente escondido */
 }
 
+.menu-hamburguer ul {
+    list-style-type: none;
+    background-color: #4CAF50; /* Mesma cor do cabeçalho */
+    padding: 10px; 
+}
+
+.menu-hamburguer ul li a {
+    color: white; 
+}
+
 .toggle-menu {
     background-color: transparent;
     border: none;
