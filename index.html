@@ -3,37 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cabeçalho com Menu</title>
+    <title>Portfólio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <header>
+        <h1>Portfólio</h1>
+        <h2 id="disciplina">Matemática</h2>
+        <input type="text" placeholder="Buscar...">
+        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+    </header>
 
-<header>
-    <div class="logo">Minha Escola</div>
-    
-    <nav class="menu-principal">
+    <nav id="sidebar" class="hidden">
         <ul>
-            <li><a href="#disciplinas" class="hamburger" onclick="toggleMenu()">Disciplinas</a></li>
-            <li><a href="#conteudos">Conteúdos Principais</a></li>
+            <li><a href="#" onclick="changeDisciplina('Matemática')">Matemática</a></li>
+            <li><a href="#" onclick="changeDisciplina('Física')">Física</a></li>
+            <li><a href="#" onclick="changeDisciplina('Química')">Química</a></li>
         </ul>
     </nav>
 
-    <div class="search-container">
-        <input type="text" placeholder="Pesquisar...">
-        <button>🔍</button>
-    </div>
+    <main id="conteudo">
+        <h3>Bem-vindo ao meu portfólio de Matemática!</h3>
+        <p>Aqui você encontrará atividades, provas e projetos.</p>
+    </main>
 
-    <div class="menu-hamburguer" id="menu-hamburguer">
-        <ul>
-            <li><a href="matematica.html">Matemática</a></li>
-            <li><a href="fisica.html">Física</a></li>
-            <li><a href="quimica.html">Química</a></li>
-        </ul>
-    </div>
+    <script>
+        function toggleMenu() {
+            const sidebar = document.getElementById('sidebar');
+            sidebar.classList.toggle('hidden');
+        }
 
-    <button class="toggle-menu" onclick="toggleMenu()">☰</button>
-</header>
-
-<script src="script.js"></script>
+        function changeDisciplina(disciplina) {
+            document.getElementById('disciplina').innerText = disciplina;
+            document.getElementById('conteudo').innerHTML = `<h3>Bem-vindo ao meu portfólio de ${disciplina}!</h3><p>Aqui você encontrará atividades, provas e projetos.</p>`;
+            toggleMenu(); // fecha o menu após a seleção
+        }
+    </script>
 </body>
 </html>
+
