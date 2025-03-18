@@ -25,28 +25,28 @@ body {
  }
  
  nav {
-    background-color: #6da5c5; /* Cinza escuro */
-    color: rgb(43, 131, 214);
+    background-color: #2960c7; /* Cinza escuro */
+    color: rgb(162, 236, 155);
     width: 250px; 
     position: absolute;
     top: 60px; 
     left: 0;
  }
- 
+
  nav ul {
     list-style-type: none;
     padding: 0;
  }
  
  nav ul li a {
-    color: rgb(16, 105, 238);
+    color: rgb(89, 38, 112);
     text-decoration: none;
     padding: 15px 20px;
     display: block;
  }
  
  nav ul li a:hover {
-    background-color: #69adf0; /* Cinza mais claro */
+    background-color: #a3b124; /* Cinza mais claro */
  }
  
  .hidden {
